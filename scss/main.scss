@@ -1,13 +1,39 @@
-@import"../scss/utilitis";
-@import "../scss/navbar";
-@import"../scss/aboutme";
-@import "../scss/svgImages";
-@import "../scss/potfolio";
-@import "../scss/mediaquery";
-@import "../scss/contactme";
-@import "../scss/cssanimation";
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./variables";
+@import"./defauilt";
+@import "./nav"
 
+// h1{
+//     margin-left: $spacing;
+//     padding-top: $spacing;
+//     border: $spacing solid $danger;
+//     // width: $width;
 
+// }
 
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+    background-color: $nav-bg;
+
+    h2{
+        font-size: $fontsize;
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+        
+        li a {
+            margin-left: $spacing;
+        }
+   
+    }
+
+    .nav-link{
+        color: red;
+    }
+
+}
 
