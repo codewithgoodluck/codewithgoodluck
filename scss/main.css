@@ -337,7 +337,7 @@ h3, .h3, h6, .h6 {
   border-radius: 50%;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 425px) {
   .main {
     height: auto;
     margin-right: 100rem;
