@@ -1,13 +1,14 @@
-
-
-
-
 @charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 h3, .h3, h6, .h6 {
@@ -334,6 +335,182 @@ h3, .h3, h6, .h6 {
   display: inline-block;
   margin-bottom: 20px;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 320px) {
+  .main {
+    height: auto;
+    margin-right: 100rem;
+  }
+  .main .flex {
+    display: inline;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 100px;
+  }
+  .main .flex .col2 {
+    padding-left: 100px;
+    z-index: 300;
+  }
+  .main .flex .col2 h6, .main .flex .col2 .h6 {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .main .col1 h3, .main .col1 .h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  .btn1 {
+    height: 50px;
+    width: 110px;
+  }
+  .btn2 {
+    display: none;
+    height: 20px;
+    width: 100px;
+  }
+  .main-aboutme-picture {
+    -webkit-box-shadow: 36px -23px 11px 105px rgba(0, 0, 0, 0.41);
+    box-shadow: 36px -23px 11px 105px rgba(0, 0, 0, 0.41);
+    background-color: #27221e;
+  }
+  .about-section {
+    background-color: lightgray;
+  }
+  .main-about-me {
+    background-color: white;
+  }
+  .progress {
+    background-color: #e7d809 !important;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    border-radius: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 25px;
+    width: 100%;
+  }
+  .progress .about_us_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 2rem;
+    background-color: red;
+  }
+  .progress .about_us_btn .btn1 {
+    height: 50px;
+    width: 110px;
+    margin-left: 200px;
+  }
+  .progress .pro-value-1 {
+    -webkit-animation: load1 3s normal forwards;
+            animation: load1 3s normal forwards;
+    border-radius: 50px;
+    height: 25px;
+    background-color: #030303;
+    width: 0;
+  }
+  .progress .pro-value-1 p {
+    color: #fdfbfb;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+  .progress .pro-value-1 .float-right {
+    float: right;
+  }
+  .progress .pro-value-2 {
+    -webkit-animation: load2 3s normal forwards;
+            animation: load2 3s normal forwards;
+    border-radius: 50px;
+    height: 25px;
+    background-color: #030303;
+    width: 0;
+  }
+  .progress .pro-value-2 p {
+    color: #fdfbfb;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+  .progress .pro-value-2 .float-right {
+    float: right;
+  }
+  .progress .pro-value-3 {
+    -webkit-animation: load3 3s normal forwards;
+            animation: load3 3s normal forwards;
+    border-radius: 50px;
+    height: 25px;
+    background-color: #030303;
+    width: 0;
+  }
+  .progress .pro-value-3 p {
+    color: #fdfbfb;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+  .progress .pro-value-3 .float-right {
+    float: right;
+  }
+  @-webkit-keyframes load1 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 98%;
+    }
+  }
+  @keyframes load1 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 98%;
+    }
+  }
+  @-webkit-keyframes load2 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  @keyframes load2 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  @-webkit-keyframes load3 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+  @keyframes load3 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 50%;
+    }
+  }
 }
 
 .contact {
